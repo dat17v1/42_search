@@ -22,10 +22,19 @@ public class BasicSearch
 
             // ArrayListe af personer
 
+            System.out.print("Hvad vil du søge efter: ? ");
+            String result = input.nextLine();
+
             for(int i = 0; i < persons.size(); i++)
             {
-                System.out.println(i + " " + persons.get(i));
+                if(persons.get(i).toString().contains(result))
+                {
+                    System.out.println(i + " " + persons.get(i));
+                } 
+                  
             }
+
+            
              
 
 
